@@ -353,6 +353,10 @@ img{
   align-items: flex-start;
 }
 
+.project__text p{
+  text-align: left;
+}
+
 .project__data{
   display: flex;
   justify-content: baseline;
