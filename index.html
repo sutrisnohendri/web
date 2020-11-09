@@ -1,320 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <title>Home - Hendri</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
+        <!-- ICON -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Home - Hendri</title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            :root{
+                --first-color: #1E90FF;
+                --second-color: #FFFAF0;
+            }
+            .section-title{
+                text-align: center;
+            }
+            nav{
+                background-color: #2F4F4F;
+            }
+        </style>
     </head>
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#home" class="nav__logo">Hendri</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experiences</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="https://sutrisnohendri.github.io/web/publications.html" class="nav__link">Publications</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home section" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__data">
-                        <div class="home__img">
-                            <a href="assets/img/cover_image.jpg">
-                                <img src="assets/img/cover_image.jpg" alt="cover">
-                            </a>
+        <nav id="navbar" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#home" style="padding-left:5em">Hendri</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#journal">Journals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ongoing">Working Manuscripts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conference">Conference Articles</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!----- HOME ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="home-section" id="home">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>Hi! I'm Hendri Sutrisno</h1>
+                        <p>Hendri is a young and passionate scholar who is excellent in statistics and operations research. He likes to play around in big-data environments, experienced in data analysis - mainly in insights analysis, and obsessed with algorithm optimization, either improving the model accuracy or computational efficiency.</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/hensoee/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://scholar.google.com/citations?user=7oypptsAAAAJ&amp;hl=en&amp;oi=ao" class="home__social-icon"><i class='bx bxs-graduation'></i></a>
+                            <a href="mailto:hensoee@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+                            <a href="tel:+886966546580" class="home__social-icon"><i class='bx bx-phone' ></i></a>
                         </div>
-                        <div class="home__title">
-                            <p>Hi, I'm <span class="home__title-color">Hendri Sutrisno</span></p> 
-                            <div class="home__social">
-                                <a href="https://www.linkedin.com/in/hensoee/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                                <a href="https://scholar.google.com/citations?user=7oypptsAAAAJ&amp;hl=en&amp;oi=ao" class="home__social-icon"><i class='bx bxs-graduation'></i></a>
-                                <a href="mailto:hendrisutrisno@outlook.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
-                                <a href="tel:+886966546580" class="home__social-icon"><i class='bx bx-phone' ></i></a>
-                            </div>
-                        </div>      
+                    </div>
+                    <div class="col-md-5">
+                        <img src="assets/img/cover_image.jpg" alt="hendri" width="100%">
                     </div>
                 </div>
-                    
-                <div class="home__container bd-grid">
-                    <div class="home__data">
+            </section>
+        </div>
+
+        <!----- EDUCATION ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="education-section" id="education">
+                <h2 class="section-title">- Education -</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>PhD in Industrial Engineering/Management</h5>
+                        <p>National Taiwan University of Science and Technology<br>Taipei, Taiwan | September 2018 - August 2021 (anticipated)</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>MS in Industrial Engineering/Management</h5>
+                        <p>National Taiwan University of Science and Technology<br>Taipei, Taiwan | September 2016 - August 2018</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>BS in Industrial Engineering</h5>
+                        <p>Petra Christian University<br>Surabaya, Indonesia | August 2012 - July 2016</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!----- PROJECT ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="project-section" id="project">
+                <h2 class="section-title">- Projects -</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="assets/img/300_200_csos.gif">
+                            <div class="card-body">
+                                <h5 class="card-title">Metaheuristics</h5>
+                                <p class="card-text">A metaheuristic method for high-dimensional optimization problems</p>
+                                <a href="https://hendrisutrisno.medium.com/an-introduction-to-and-implementation-of-clustering-based-symbiotic-organisms-search-csos-5c33230d0885" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="assets/img/300_200_exRTC.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Control Charts</h5>
+                                <p class="card-text">An LSTM based control chart for multivariate process monitoring</p>
+                                <a href="https://sutrisnohendri.github.io/ControlChart/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="assets/img/300_200_discords.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Anomalies Detection</h5>
+                                <p class="card-text">A novel method for discord search in multivariate data streams</p>
+                                <a href="https://sutrisnohendri.github.io/DiscordSearch/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="assets/img/300_200_human_pose.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Human Pose</h5>
+                                <p class="card-text">A skeleton-based two-person interaction recognition</p>
+                                <a href="https://github.com/hendrikTpl/STGCN-PAM-TPIR" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="assets/img/300_200_vrp.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Routing Problem</h5>
+                                <p class="card-text">A new method for solving 2E-LRP problem with mobile satellites for city logistics</p>
+                                <a href="https://github.com/sutrisnohendri/materials-for-2E-LRP-MS" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!----- EXPERIENCE ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="experience-section" id="experience">
+                <h2 class="section-title">- Experiences -</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Taralite, OVO Indonesia (July 2018 - January 2019)</h4>
                         <p>
-                            Hendri is a young and passionate scholar who is excellent in data mining, 
-                            statistics, machine learning, and operations research. 
-                            He is experienced in data analysis and obsessed with algorithm optimization for improving both prediction accuracy and computational efficiency.
-                            He is looking for an internship opportunity related to his expertise. 
+                            Fintech Peer-to-Peer Landing
+                            <br>
+                            Jakarta, Indonesia
+                            <br>
+                            <strong>Internship, Part-time | Data Scientist</strong>
+                            <ul>
+                                <li>Developed a credit scoring model, starting from data gathering, cleansing, preprocessing, feature engineering, and modeling. The proposed model was expected to reduce the false-negative rate by up to 7%.</li>
+                                <li>Presented the profit-loss strategy based on the credit scoring model to the business stakeholders.</li>
+                                <li>Contributed to developing the feature from crawled big-data to predict the lifestyles and home location for improving the credit scoring model performance.</li>
+                            </ul>
                         </p>
-                    </div> 
-                </div>              
-            </section>
-
-            <!--===== EDUCATION =====-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-                <div class="education__container bd-grid">
-                    <div>
-                        <h2 class="education__subtitle">PhD (Cand.) in Industrial Engineering/Management</h2>
-                        <p class="education__text">National Taiwan University of Science and Technology</p>
-                        <i class="bx bx-map"><p>Taipei, Taiwan</p></i>
-                        <p class="education__text">September 2018 - August 2021 (anticipated)</p>
                     </div>
-                    <div>
-                        <h2 class="education__subtitle">MS in Industrial Engineering/Management</h2>
-                        <p class="education__text">National Taiwan University of Science and Technology</p>
-                        <i class="bx bx-map"><p>Taipei, Taiwan</p></i>
-                        <p class="education__text">September 2016 - August 2018</p>
-                    </div>
-                    <div>
-                        <h2 class="education__subtitle">BS in Industrial Engineering</h2>
-                        <p class="education__text">Petra Christian University</p>
-                        <i class="bx bx-map"><p>Surabaya, Indonesia</p></i>
-                        <p class="education__text">August 2012 - July 2016</p>
+                    <div class="col-md-12">
+                        <h4>New Frontier Solutions (January - May 2016)</h4>
+                        <p>
+                            Management Consulting
+                            <br>
+                            Jakarta, Indonesia
+                            <br>
+                            <strong>Internship | Data Analyst</strong>
+                            <ul>
+                                <li>Developed a credit scoring model for an overseas bank in Indonesia. The proposed model was expected to reduce the false-positive error by 6%.</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </section>
+        </div>
 
-            <!--===== PROJECT =====-->
-            <section class="project section" id="project">
-                <h2 class="section-title">Projects</h2>
-                
-                <div class="project__container bd-grid">
-                    <div class="project__data">
-                        <div class="project__img">
-                            <a href="assets/img/csos.gif">
-                                <img src="assets/img/csos.gif" alt="csos">
-                            </a>
-                        </div>
-                        <div class="project__text">
-                            <p>Developing a fast metaheuristic algorithm for optimizing high-dimensional problems <a href="https://sutrisnohendri.github.io/CSOS/">[link]</a></p>
-                        </div>
-                    </div>
-                    <div class="project__data">
-                        <div class="project__img">
-                            <a href="assets/img/csos.gif">
-                                <img src="assets/img/csos.gif" alt="csos">
-                            </a>
-                        </div>
-                        <div class="project__text">
-                            <p>Developing a deep learning-based control chart for reducing the response delay in monitoring multivariate processes <a href="https://sutrisnohendri.github.io/ControlChart/">[link]</a></p>
+        <!----- SKILL ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="skill-section" id="skill">
+                <h2 class="section-title">- Skills -</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>Python</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95%" aria-valuemin="0" aria-valuemax="100"><strong>95%</strong></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__data">
-                        <div class="project__img">
-                            <a href="assets/img/csos.gif">
-                                <img src="assets/img/csos.gif" alt="csos">
-                            </a>
-                        </div>
-                        <div class="project__text">
-                            <p>Developing a fast unsupervised method for detecting multivariate time series discords <a href="https://sutrisnohendri.github.io/DiscordSearch/">[link]</a></p>
-                        </div>
-                    </div>
-                    <div class="project__data">
-                        <div class="project__img">
-                            <a href="assets/img/csos.gif">
-                                <img src="assets/img/csos.gif" alt="csos">
-                            </a>
-                        </div>
-                        <div class="project__text">
-                            <p>
-                                Developing a skeleton-based two-person interaction recognition method using spatial-temporal graph convolution network
-                                <a href="https://github.com/ajisetyoko/mutual-action">[link]</a>
-                            </p>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>SQL</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100"><strong>85%</strong></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__data">
-                        <div class="project__img">
-                            <a href="assets/img/csos.gif">
-                                <img src="assets/img/csos.gif" alt="csos">
-                            </a>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>Tensorflow</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100"><strong>85%</strong></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project__text">
-                            <p>
-                                Investigating and developing the heuristic method for solving the two-echelon location routing problem with mobile satellites
-                                <a href="https://github.com/sutrisnohendri/materials-for-2E-LRP-MS">[link]</a>
-                            </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>R</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100"><strong>85%</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>GIT</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100"><strong>85%</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <h5>AMPL</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100"><strong>80%</strong></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
 
-            <!--===== EXPERIENCE =====-->
-            <section class="experience section" id="experience">
-                <h2 class="section-title">Experiences</h2>
-
-                <div class="experience__container bd-grid">
-                    <div class="experience__data">
-                        <h2 class="experience__subtitle">Taralite, OVO Indonesia (July 2018 - January 2019)</h2>
-                        <p class="experience__text">Fintech Peer-to-Peer Landing</p>
-                        <i class="bx bx-map"><p>Jakarta, Indonesia</p></i>
-                        <p><strong>Internship, Part-time - Data Scientist</strong></p>
-                        <ul class="experience__list">
-                            <li>Developed a credit scoring model, starting from data gathering, cleansing, preprocessing, feature engineering, and modeling. The proposed model was expected to reduce the false-negative rate by up to 7%.</li>
-                            <li>Presented the profit-loss strategy based on the credit scoring model to the business stakeholders.</li>
-                            <li>Contributed to developing the feature from crawled big-data to predict the lifestyles and home location for improving the credit scoring model performance.</li>
-                        </ul>
-                    </div>
-                    <div class="experience__data">
-                        <h2 class="experience__subtitle">New Frontier Solutions (January - May 2016)</h2>
-                        <p class="experience__text">Management Consulting</p>
-                        <i class="bx bx-map"><p>Jakarta, Indonesia</p></i>
-                        <p><strong>Internship - Data Analyst</strong></p>
-                        <ul class="experience__list">
-                            <li>Developed a credit scoring model for an overseas bank in Indonesia. The proposed model was expected to reduce the false-positive error by 6%.</li>
-                        </ul>
+        <!----- JOURNAL ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="journal-section" id="journal">
+                <h2 class="section-title">- Journals -</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol>
+                            <li>
+                                <p class="publications__text">Chao-Lung Yang and <u>Hendri Sutrisno</u> (2020). <strong>A clustering-based symbiotic organisms search for high dimensional optimization problems</strong>, Applied Soft Computing, 106722. DOI: 10.1016/j.asoc.2020.106722. <a href="https://dx.doi.org/10.1016/j.asoc.2020.106722">[link]</a></p>
+                            </li>
+                            <li>
+                                <p class="publications__text">Hsiu-Ling Chen, Gracia Vicki Widarso, and <u>Hendri Sutrisno</u> (2020). <strong>A chatbot for learning Chinese: Learning Achievement and technology acceptance</strong>, Journal of Educational Computing Research, Vol. 58, Issue 6. DOI: 10.1177/0735633120929622. <a href="https://dx.doi.org/10.1177/0735633120929622">[link]</a></p>
+                            </li>
+                            <li>
+                                <p class="publications__text">Chao-Lung Yang, Hendrik Tampubolon, Arnold Samuel Chan, <u>Hendri Sutrisno</u>, and Kai-Lung Hua (2019). <strong>Optimized CapsNet for traffic-jammed speed prediction using mobile sensor data under urban swarming transportation</strong>, Sensors, 5227. DOI: 10.3390/s19235277. <a href="https://dx.doi.org/10.3390/s19235277">[link]</a></p>
+                            </li>
+                            <li>
+                                <p class="publications__text">Chao-Lung Yang, Frederik Darwin, and <u>Hendri Sutrisno</u> (2019). <strong>Local recurrence rates with automatic time windows for discord search in multivariate time series</strong>, Procedia Manufacturing (39C), pp.1793-1802. DOI: 10.1016/j.promfg.2020.01.261. <a href="https://dx.doi.org/10.1016/j.promfg.2020.01.261">[link]</a></p>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </section>
+        </div>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">PYTHON</span>
-                            </div>
-                            <div class="skills__bar skills__python">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">TENSORFLOW</span>
-                            </div>
-                            <div class="skills__bar skills__tensorflow">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">R</span>
-                            </div>
-                            <div class="skills__bar skills__r">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">GIT</span>
-                            </div>
-                            <div class="skills__bar skills__git">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">SQL</span>
-                            </div>
-                            <div class="skills__bar skills__sql">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">AMPL</span>
-                            </div>
-                            <div class="skills__bar skills__ampl">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">PYSPARK</span>
-                            </div>
-                            <div class="skills__bar skills__pyspark">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">HADOOP</span>
-                            </div>
-                            <div class="skills__bar skills__hadoop">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>         
-                        <!-- <img src="assets/img/work3.jpg" alt="" class="skills__img"> -->
+        <!----- ONGOING ARTICLES ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="ongoing-section" id="ongoing">
+                <h2 class="section-title">- Working Manuscripts -</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol>
+                            <li>
+                                <p class="ongoing__text"><strong>Real-time contrast control chart with long short-term memory network for monitoring multivariate processes</strong>
+                                <br><u>Hendri Sutrisno</u> and Chao-Lung Yang
+                                <br>Status: 2nd round review since October 2020</p>
+                            </li>
+                            <li>
+                                <p class="ongoing__text"><strong>The two-echelon location routing problem with dynamic satellite: Mathematical model and heuristics methods</strong>
+                                <br>Chao-Lung Yang and <u>Hendri Sutrisno</u>
+                                <br>Status: 1st round review since March 2020</p>
+                            </li>
+                            <li>
+                                <p class="ongoing__text"><strong>Fast discord search method in multi-streams time series using local recurrence rate and dynamic time warping</strong>
+                                <br>Chao-Lung Yang and <u>Hendri Sutrisno</u>
+                                <br>Status: 1st round review since October 2020</p>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </section>
+        </div>
 
-
-            <!--===== CONTACT =====-->
-            <!-- <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="mailto:hensoee@gmail.com" method="POST" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
+        <!----- CONFERENCES ----->
+        <div class="container" style="padding-top: 2em; padding-bottom: 2em;">
+            <section class="conference-section" id="conference">
+                <h2 class="section-title">- Conference Articles -</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol>
+                            <li>
+                                <p class="conference__text"><strong>Dynamic control limit for detecting process shift in production</strong>
+                                <br>Chao-Lung Yang and <u>Hendri Sutrisno</u>
+                                <br>The 2019 16th International Conference on Automation Technology, Taiwan</p>
+                            </li>
+                            <li>
+                                <p class="conference__text"><strong>The two-echelon vehicle routing problem with dynamic satellites for city logistics</strong>
+                                <br>Chao-Lung Yang, <u>Hendri Sutrisno</u>, Arnold Samuel Chan, and Budhi Sholeh Wibowo
+                                <br>The 2018 48th International Conference on Computers and Industrial Engineering, New Zealand</p>
+                            </li>
+                            <li>
+                                <p class="conference__text"><strong>Streaming data analysis framework for cyber-physical system of metal machining processes</strong> <a href="https://dx.doi.org/10.1109/ICPHYS.2018.8390764">[link]</a>
+                                <br>Chao-Lung Yang, <u>Hendri Sutrisno</u>, Na-Wei Lo, Ching-Chih Wei, Cheng-Lung Wei, and Shang-Heng Hsieh
+                                <br>The 2018 1st International Conference on Cyber Physical System, Russia
+                                <br>DOI: 10.1109/ICPHYS.2018.8390764</p>
+                            </li>
+                            <li>
+                                <p class="conference__text"><strong>Short-term sales forecast of perishable goods for franchise business</strong> <a href="https://dx.doi.org/10.1109/KST.2018.8426091">[link]</a>
+                                <br>Chao-Lung Yang and <u>Hendri Sutrisno</u>
+                                <br>The 2018 10th International Conference on Knowledge and Smart Technology, Thailand
+                                <br>DOI: 10.1109/KST.2018.8426091</p>
+                            </li>
+                            <li>
+                                <p class="conference__text"><strong>Credit scoring refinement using optimized logistic regression</strong> <a href="https://doi.org/10.1109/ICSIIT.2017.48">[link]</a>
+                                <br><u>Hendri Sutrisno</u> and Siana Halim
+                                <br>2017 5th International Conference on Soft Computing, Intelligent System and Information Technology, Indonesia
+                                <br>DOI: 10.1109/ICSIIT.2017.48</p>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
-            </section> -->
-        </main>
+            </section>
+        </div>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Hendri Sutrisno</p>
-            <p>&#169; 2020 copyright all right reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <!----- FOOTER ----->
+        <footer class="footer pt-4">
+            <div class="footer-copyright text-center py-3">
+                <strong>© 2020 Copyright: Hendri Sutrisno</strong>
+            </div>
+        </footer>        
     </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
